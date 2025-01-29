@@ -14,6 +14,9 @@ ul {
   margin: 0;
 }
 /* start navbar */
+.navbar {
+  position: relative;
+}
 .navbar ul {
   list-style: none;
 }
@@ -25,6 +28,26 @@ ul {
   color: red;
 }
 /* end navbar */
+
+/* start sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  list-style: none;
+}
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar a:hover {
+  color: red;
+}
+/* end sidebar */
 
 /* start heroSection */
 .heroSection {
@@ -209,7 +232,7 @@ ul {
 /* end aboutUs */
 
 /* start Subscribe */
-.Subscribe .container{
+.Subscribe .container {
   background-color: black;
   color: white;
 }
@@ -226,22 +249,16 @@ ul {
 /* end Subscribe */
 
 /* start footer */
-footer{
-    background-color: #333333;
-    color: white;
+footer {
+  background-color: #333333;
+  color: white;
 }
-footer a{
-    color: var(--ColorLink);
+footer a {
+  color: var(--ColorLink);
 }
 /* end footer */
 
 @media (max-width: 1023px) {
-  .navbar i {
-    display: block !important;
-  }
-  .navbar ul {
-    display: none !important;
-  }
   .forSale main div {
     width: calc(95% / 1);
     align-items: center;
@@ -257,7 +274,7 @@ footer a{
     flex-direction: column;
     gap: 5rem;
   }
-  .Subscribe{
+  .Subscribe {
     margin: 0 !important;
   }
 }
