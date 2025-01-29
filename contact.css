@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --SecondFont: "Montserrat", sans-serif;
+  --ColorLink: #96bfe5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", system-ui;
+}
+ul {
+  margin: 0;
+}
+/* start navbar */
+.navbar ul {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  color: red;
+}
+/* end navbar */
+
+/* start contactUs */
+.contactUs .map {
+  background-color: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  text-align: center;
+  transition: opacity ease-in-out;
+  height: 340px;
+}
+.contactUs h5 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--SecondFont);
+}
+.contactUs h6 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: var(--SecondFont);
+}
+.contactUs p {
+  font-size: 1.1rem;
+  font-family: var(--SecondFont);
+}
+/* end contactUs */
+
+/* start WriteUs */
+.WriteUs h5 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--SecondFont);
+}
+.WriteUs input,
+textarea {
+  padding: 0.5rem 1.3rem;
+  border-top: 0.5px solid white;
+  border-right: 0.5px solid white;
+  border-left: 0.5px solid white;
+}
+.WriteUs .button {
+  width: 20%;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+/* end WriteUs */
+
+/* start FAQ */
+.FAQ h5 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: var(--SecondFont);
+}
+/* end FAQ */
+
+/* start Subscribe */
+.Subscribe .container {
+  background-color: black;
+  color: white;
+}
+.Subscribe .email {
+  background-color: black;
+  border: 1px solid black;
+  border-bottom: 1.5px white solid;
+  color: gray;
+}
+.Subscribe h6 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+/* end Subscribe */
+
+/* start footer */
+footer {
+  background-color: #333333;
+  color: white;
+}
+footer a {
+  color: var(--ColorLink);
+}
+/* end footer */
+@media (max-width: 1023px) {
+  .Subscribe {
+    margin: 0 !important;
+  }
+}

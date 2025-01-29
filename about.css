@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --SecondFont: "Montserrat", sans-serif;
+  --ColorLink: #96bfe5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", system-ui;
+}
+ul {
+  margin: 0;
+}
+/* start navbar */
+.navbar ul {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  color: red;
+}
+/* end navbar */
+
+/* start aboutUs */
+.aboutUs img{
+  height: 350px;
+  object-fit: cover;
+  border-radius: .9rem;
+}
+.aboutUs h4{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.aboutUs h5{
+  font-weight: 700;
+  font-family: var(--SecondFont);
+}
+.aboutUs h6{
+  font-size: 2rem;
+  font-weight: 400;
+}
+.aboutUs p{
+  font-size: 1.2rem;
+}
+/* end aboutUs */
+
+/* start rate */
+.rate .container{
+  background-color: black;
+  color: white;
+}
+.rate h5{
+  font-weight: 900;
+  font-size: 5rem;
+}
+.rate p{
+  font-size: 1.6rem;
+}
+/* end rate */
+
+/* start whyChooseUs */
+.whyChooseUs main div {
+  width: calc(96% / 2);
+}
+.whyChooseUs h6 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.whyChooseUs p {
+  font-size: 1.2rem;
+  color: grey;
+}
+.whyChooseUs h5 {
+  font-size: 2rem;
+  font-family: var(--SecondFont);
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+.whyChooseUs main div span {
+  width: 25%;
+  background-color: black;
+  height: 1px;
+}
+/* end whyChooseUs */
+
+/* start OurTeam */
+.OurTeam img{
+  border-radius: .8rem;
+}
+.OurTeam h5{
+  font-weight: 700;
+}
+.OurTeam h3{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.OurTeam h4{
+  font-weight: 600;
+  font-family: var(--SecondFont);
+}
+/* end OurTeam */
+
+/* start Subscribe */
+.Subscribe .container {
+  background-color: black;
+  color: white;
+}
+.Subscribe .email {
+  background-color: black;
+  border: 1px solid black;
+  border-bottom: 1.5px white solid;
+  color: gray;
+}
+.Subscribe h6 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+/* end Subscribe */
+
+/* start footer */
+footer {
+  background-color: #333333;
+  color: white;
+}
+footer a {
+  color: var(--ColorLink);
+}
+/* end footer */
+@media (max-width: 1023px) {
+  .whyChooseUs main div {
+    width: calc(96% / 1);
+  }
+  .Subscribe {
+    margin: 0 !important;
+  }
+  .OurTeam main{
+    flex-wrap: wrap;
+  }
+  .rate .row{
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .aboutUs main{
+    flex-wrap: wrap;
+  }
+}

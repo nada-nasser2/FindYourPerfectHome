@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --SecondFont: "Montserrat", sans-serif;
+  --ColorLink: #96bfe5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", system-ui;
+}
+ul {
+  margin: 0;
+}
+/* start navbar */
+.navbar ul {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  color: red;
+}
+/* end navbar */
+
+/* start heroSection */
+.heroSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  min-height: 85vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("https://assets.nicepagecdn.com/11a8ddce/6065313/images/empty-flat-interrior-with-elements-decoration.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.heroSection h1 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 700;
+}
+.heroSection h5 {
+  font-size: 1.9rem;
+  color: white;
+  font-weight: 400;
+  font-family: var(--SecondFont);
+}
+.heroSection p {
+  font-size: 1.1rem;
+  color: white;
+  font-family: var(--SecondFont);
+}
+.heroSection a {
+  font-size: 1.1rem;
+  color: var(--ColorLink);
+  font-family: var(--SecondFont);
+  text-decoration: none;
+}
+.heroSection button {
+  padding: 0.8rem 2.5rem;
+  border-radius: 0.8rem;
+}
+.TalkTo {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.TalkTo:hover {
+  border: 1px solid #ffffff;
+  background-color: #ffffffdb;
+}
+.SeeOur {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+.SeeOur:hover {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  color: black;
+}
+/* end heroSection */
+
+/* start forSale */
+.forSale img {
+  height: 415px;
+  border-radius: 0.7rem;
+}
+.forSale p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: var(--SecondFont);
+}
+.forSale main div {
+  width: calc(95% / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.forSale button {
+  border-radius: 0.7rem;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 0.8rem 1.1rem;
+  font-family: var(--SecondFont);
+}
+.forSale button:hover {
+  background-color: var(--ColorLink);
+  border: 1px solid var(--ColorLink);
+}
+/* end forSale */
+
+/* start whyChooseUs */
+.whyChooseUs main div {
+  width: calc(96% / 2);
+}
+.whyChooseUs h6 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.whyChooseUs p {
+  font-size: 1.2rem;
+  color: grey;
+}
+.whyChooseUs h5 {
+  font-size: 2rem;
+  font-family: var(--SecondFont);
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+.whyChooseUs main div span {
+  width: 25%;
+  background-color: black;
+  height: 1px;
+}
+/* end whyChooseUs */
+
+/* start solutions */
+.solutions {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.63),
+      rgba(0, 0, 0, 0.585)
+    ),
+    url("https://assets.nicepagecdn.com/11a8ddce/6065313/images/2150695899.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.solutions h4 {
+  font-weight: 700;
+}
+.solutions h6 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0.8rem 0;
+}
+.solutions h5 {
+  font-weight: 400;
+  font-family: var(--SecondFont);
+  font-size: 2rem;
+}
+.solutions p {
+  font-family: var(--SecondFont);
+  font-size: 1.1rem;
+}
+.solutions button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  padding: 0.8rem 1rem;
+  color: white;
+  border-radius: 0.6rem;
+}
+.solutions button:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: black;
+}
+/* end solutions */
+
+/* start aboutUs */
+.aboutUs img {
+  border-radius: 1rem;
+}
+.aboutUs h5 {
+  font-weight: 700;
+}
+.aboutUs h6 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--SecondFont);
+}
+.aboutUs p {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.aboutUs a {
+  color: var(--ColorLink);
+  text-decoration: none;
+}
+/* end aboutUs */
+
+/* start Subscribe */
+.Subscribe .container{
+  background-color: black;
+  color: white;
+}
+.Subscribe .email {
+  background-color: black;
+  border: 1px solid black;
+  border-bottom: 1.5px white solid;
+  color: gray;
+}
+.Subscribe h6 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+/* end Subscribe */
+
+/* start footer */
+footer{
+    background-color: #333333;
+    color: white;
+}
+footer a{
+    color: var(--ColorLink);
+}
+/* end footer */
+
+@media (max-width: 1023px) {
+  .navbar i {
+    display: block !important;
+  }
+  .navbar ul {
+    display: none !important;
+  }
+  .forSale main div {
+    width: calc(95% / 1);
+    align-items: center;
+  }
+  .forSale main {
+    flex-direction: column !important;
+    gap: 3rem !important;
+  }
+  .whyChooseUs main div {
+    width: calc(96% / 1);
+  }
+  .solutions section {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .Subscribe{
+    margin: 0 !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+@media (max-width: 768px) {
+}
